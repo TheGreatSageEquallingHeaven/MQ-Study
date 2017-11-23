@@ -17,14 +17,14 @@ public class RabbitMQTest {
     public void testRabbit() {
         RabbitMessageSender rabbitMessageSender = new RabbitMessageSender();
         for(int i=1;i<=10;i++){
-            rabbitMessageSender.send("abc"+i);
+            rabbitMessageSender.send("xyz"+i);
         }
     }
 
     @Test
     public void testRabbitListener() {
-        while(true){
-            AppContextManager.INSTANCE.buildRabbitMQContext();
-        }
+//        while(true){
+//            AppContextManager.INSTANCE.buildRabbitMQContext();
+//        }
     }
 }
