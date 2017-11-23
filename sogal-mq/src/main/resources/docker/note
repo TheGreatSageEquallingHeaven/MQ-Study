@@ -1,0 +1,2 @@
+activemq docker run command: docker run --name activemq --publish 61616:61616 -e ACTIVEMQ_ADMIN_LOGIN=admin -e ACTIVEMQ_ADMIN_PASSWORD=admin --restart=always -d webcenter/activemq
+rabbitmq docker run command: docker run --name rabbitmq --publish 5671:5671 --publish 5672:5672 --publish 4369:4369 --publish 25672:25672 --publish 15671:15671 --publish 15672:15672 -d rabbitmq:management
