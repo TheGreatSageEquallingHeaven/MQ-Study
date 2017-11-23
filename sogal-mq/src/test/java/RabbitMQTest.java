@@ -22,8 +22,8 @@ public class RabbitMQTest {
 
     @Test
     public void testRabbitListener() {
-        while(true){
-            AppContextManager.INSTANCE.buildRabbitMQContext();
-        }
+//        while(false){
+//            AppContextManager.INSTANCE.buildRabbitMQContext();
+//        }
     }
 }
