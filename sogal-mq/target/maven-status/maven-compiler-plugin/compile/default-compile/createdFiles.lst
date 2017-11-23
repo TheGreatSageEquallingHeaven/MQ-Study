@@ -1,0 +1,3 @@
+com/sogal/rabbitmq/context/ApplicationContextManager.class
+com/sogal/rabbitmq/sender/RabbitMessageSender.class
+com/sogal/rabbitmq/listener/RabbitMessageListener.class
