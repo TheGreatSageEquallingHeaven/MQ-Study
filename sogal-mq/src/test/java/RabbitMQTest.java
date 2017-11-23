@@ -3,6 +3,7 @@ import com.sogal.rabbitmq.sender.RabbitMessageSender;
 import org.junit.Before;
 import org.junit.Test;
 
+
 /**
  * Created by xiaoxuwang on 2017/11/23.
  */
@@ -22,8 +23,8 @@ public class RabbitMQTest {
 
     @Test
     public void testRabbitListener() {
-//        while(false){
-//            AppContextManager.INSTANCE.buildRabbitMQContext();
-//        }
+        while(true){
+            AppContextManager.INSTANCE.buildRabbitMQContext();
+        }
     }
 }
