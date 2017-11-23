@@ -9,10 +9,10 @@ import org.springframework.context.support.AbstractApplicationContext;
  */
 public class RabbitMessageSender {
 
-    private AbstractApplicationContext ctx  = AppContextManager.INSTANCE.buildRabbitMQContext();
+    private static AbstractApplicationContext ctx = AppContextManager.INSTANCE.buildRabbitMQContext();
+    private static AmqpTemplate amqpTemplate = (AmqpTemplate)ctx.getBean("amqpTemplate");
 
     public void send(String message) {
-        AmqpTemplate amqpTemplate = (AmqpTemplate)ctx.getBean("amqpTemplate");
         amqpTemplate.convertAndSend(message);
     }
 }
