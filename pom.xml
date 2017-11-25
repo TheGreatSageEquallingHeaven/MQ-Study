@@ -10,11 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>sogal-mq</module>
-<<<<<<< HEAD
         <module>sogal-rabbitmq</module>
-=======
->>>>>>> 9929f2e7ed2783a0d035515017380029c6e0c20b
     </modules>
-
 
 </project>
